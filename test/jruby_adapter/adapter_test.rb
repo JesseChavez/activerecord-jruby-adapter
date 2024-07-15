@@ -2,10 +2,10 @@
 
 require "test_helper"
 
-class Activerecord::Jruby::AdapterTest < Test::Unit::TestCase
+class ActiveRecord::JRubyAdapter::AdapterTest < Test::Unit::TestCase
   test "VERSION" do
     assert do
-      ::Activerecord::Jruby::Adapter.const_defined?(:VERSION)
+      ::ActiveRecord::JRubyAdapter.const_defined?(:VERSION)
     end
   end
 

@@ -1,23 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/activerecord/jruby/adapter/version"
+require_relative "lib/jruby_adapter/version"
 
 Gem::Specification.new do |spec|
   spec.name = "activerecord-jruby-adapter"
-  spec.version = Activerecord::Jruby::Adapter::VERSION
+  spec.version = ActiveRecord::JRubyAdapter::VERSION
   spec.authors = ["Jesse Chavez"]
   spec.email = ["jesse.chavez.r@gmail.com"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
-  spec.required_ruby_version = ">= 3.0.0"
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
+  spec.summary = "Database adapter for ActiveRecord to be used with JRuby"
+  spec.description = "Database adapter for ActiveRecord to be used with JRuby"
+  spec.homepage = "https://github.com/JesseChavez/activerecord-jruby-adapter"
+  spec.required_ruby_version = ">= 3.1.0"
+  spec.platform = "java"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/JesseChavez/activerecord-jruby-adapter"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
